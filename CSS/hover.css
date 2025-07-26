@@ -1,0 +1,55 @@
+.left ul li:hover {
+    background-color: #E5F1FF;
+    transform: scale(1.01);
+}
+
+/* .search-button:hover {
+    transform: scale(1.05);
+} */
+.layout li:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+
+}
+
+.items li:hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+
+.box2:hover,
+.box3:hover {
+    transform: scale(1.05);
+}
+
+.social li:hover {
+    transform: scale(1.05);
+}
+
+.about ul li:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.partnership ul li:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+
+}
+
+.informations ul li:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+
+}
+
+.forusers ul li:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+
+}
+
+.getapp img:hover {
+    transform: scale(1.05);
+
+}

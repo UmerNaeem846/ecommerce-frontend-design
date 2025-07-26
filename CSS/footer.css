@@ -1,0 +1,209 @@
+footer {
+    background-color: #EFF2F4;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFF2F4;
+    padding: 38.5px 0px;
+}
+
+.text-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    height: 113px;
+    width: 617px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.newsletter h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.newsletter p {
+    font-size: 16px;
+    color: #606060;
+    font-weight: 400;
+}
+
+.form {
+    width: 392px;
+    display: flex;
+    position: relative;
+    gap: 4px;
+}
+
+.form img {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+
+.email {
+    width: 274px;
+    height: 40px;
+    padding-left: 35px;
+    border: 1px solid #DEE2E7;
+    border-radius: 7px;
+    outline: none;
+}
+
+.subs {
+    height: 40px;
+    width: 110px;
+    font-size: 16px;
+    font-size: 400;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(180deg, #127FFF 0%, #0067FF 100%);
+    cursor: pointer;
+
+}
+
+.footer-items {
+    padding: 50px 150px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.branding {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+}
+
+.branding p {
+    color: #505050;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.branding .social {
+    list-style: none;
+    display: flex;
+    column-gap: 12px;
+}
+
+.social li {
+    cursor: pointer;
+    transition: all 0.1s ease, color 0.1s ease;
+}
+
+
+.about h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.about ul {
+    list-style: none;
+    color: #8B96A5;
+    line-height: 28px;
+}
+
+.about ul li {
+    cursor: pointer;
+    transition: all 0.1s ease, color 0.1s ease;
+
+}
+
+.partnership h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+
+}
+
+
+.partnership ul {
+    list-style: none;
+    color: #8B96A5;
+    line-height: 28px;
+
+
+}
+
+.partnership ul li {
+    cursor: pointer;
+    transition: all 0.1s ease, color 0.1s ease;
+
+}
+
+.informations h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+
+}
+
+.informations ul {
+    list-style: none;
+    color: #8B96A5;
+    line-height: 28px;
+
+
+}
+
+.informations ul li {
+    cursor: pointer;
+    transition: all 0.1s ease, color 0.1s ease;
+
+}
+
+.forusers h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.forusers ul {
+    list-style: none;
+    color: #8B96A5;
+    line-height: 28px;
+}
+
+.forusers ul li {
+    cursor: pointer;
+    transition: all 0.1s ease, color 0.1s ease;
+
+}
+
+.getapp h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.getapp img {
+    cursor: pointer;
+    transition: all 0.1s ease, color 0.1s ease;
+
+}
+
+.ecom {
+    padding: 22px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ecom p {
+    color: #606060;
+}

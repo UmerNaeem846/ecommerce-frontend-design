@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.flip {
+    filter: invert(1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    border: 1px solid #E0E0E0
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #F7FAFC;
+
+}
+
+
+header .nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 150px;
+}
+
+.search {
+    display: flex;
+    border: 1px solid #0D6EFD;
+    border-radius: 5px;
+}
+
+#Search-b {
+    border: 1px solid #0D6EFD;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 421px;
+    height: 40px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+
+}
+
+
+#dropdown {
+    color: #1C1C1C;
+    border: none;
+    border-left: none;
+    border: 1px solid #0D6EFD;
+    height: 40px;
+    width: 145px;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    padding: 0px 5px;
+    appearance: none;
+    cursor: pointer;
+    background: url('data:image/svg+xml;utf8,<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.59 0.295044L6 4.87504L1.41 0.295044L0 1.70504L6 7.70504L12 1.70504L10.59 0.295044Z" fill="%238B96A5"/></svg>') no-repeat right 10px center;
+}
+
+
+.search-button {
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(180deg, #127FFF 0%, #0067FF 100%);
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+header .layout {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.layout li {
+    cursor: pointer;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    font-size: 12px;
+    color: #8B96A5;
+    transition: all 0.1s ease, color 0.1s ease;
+}
+
+.show2 {
+    text-decoration: underline;
+}
+
+.second-nav {
+    background-color: white;
+    padding: 16px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-nav .list {
+    width: 620px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.second-nav .list .items {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.items li {
+    cursor: pointer;
+    color: #1C1C1C;
+    transition: all 0.1s ease, color 0.1s ease;
+}
+
+.list img {
+    cursor: pointer;
+}
+
+#dropdown2 {
+    color: #1C1C1C;
+    padding-left: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 91px;
+    appearance: none;
+    font-size: 16px;
+    font-weight: 500;
+    background: url('data:image/svg+xml;utf8,<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.59 0.295044L6 4.87504L1.41 0.295044L0 1.70504L6 7.70504L12 1.70504L10.59 0.295044Z" fill="%238B96A5"/></svg>') no-repeat left 70px center;
+}
+
+.dropdown3 {
+    display: flex;
+    gap: 30px;
+
+}
+
+#Language {
+    color: #1C1C1C;
+
+    appearance: none;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 124px;
+    background: url('data:image/svg+xml;utf8,<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.59 0.295044L6 4.87504L1.41 0.295044L0 1.70504L6 7.70504L12 1.70504L10.59 0.295044Z" fill="%238B96A5"/></svg>') no-repeat left 100px center;
+
+}
+
+.custom-dropdown {
+    width: 117px;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.selected {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    color: #1C1C1C;
+
+}
+
+.selected img:first-of-type {
+    margin-left: 5px;
+    width: 22px;
+    height: 16px;
+}
+
+
+.arrow {
+    width: 12px;
+    height: 7px;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: white;
+    z-index: 1000;
+}
+
+.option {
+    color: #1C1C1C;
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.option img {
+    width: 22px;
+    height: 16px;
+}
+
+.show {
+    display: block;
+}

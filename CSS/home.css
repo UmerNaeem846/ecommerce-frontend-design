@@ -1,0 +1,136 @@
+main {
+    height: 1920px;
+    padding: 0px 150px;
+}
+
+.container1 {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.left ul {
+    font-size: 16px;
+    list-style: none;
+    line-height: 40px;
+    color: #505050;
+}
+
+.left ul li {
+    padding-left: 20px;
+    width: 250px;
+    cursor: pointer;
+    transition: all 0.1s ease, color 0.1s ease;
+
+}
+
+.show1 {
+    background-color: #E5F1FF;
+    transform: scale(1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    position: relative;
+}
+
+.para {
+    position: absolute;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.center img {
+    max-height: 360px;
+    max-width: 700px;
+}
+
+.trendings {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.e-items {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.l-but {
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.right .box1 {
+    background-color: #E3F0FF;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 8px;
+
+}
+
+.greetings {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons {
+    line-height: 40px;
+}
+
+.buttons button {
+    width: 180px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.join {
+    background: linear-gradient(180deg, #127FFF 0%, #0067FF 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.login {
+    background-color: white;
+    border: 1px solid #DEE2E7;
+    border-radius: 8px;
+    color: #0D6EFD;
+
+}
+
+.box2 {
+    margin-top: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 95px;
+    background-color: #F38332;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.1s ease;
+
+}
+
+.box3 {
+    margin-top: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 95px;
+    background-color: #55BDC3;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+
+}
