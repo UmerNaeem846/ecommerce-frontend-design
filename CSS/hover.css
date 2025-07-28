@@ -18,6 +18,7 @@
     transform: scale(1.02);
 }
 
+/* Home Page Animations */
 .box2:hover,
 .box3:hover {
     transform: scale(1.05);
@@ -54,3 +55,42 @@
     transform: scale(1.05);
 
 }
+
+.days:hover,
+.hours:hover,
+.minutes:hover,
+.seconds:hover {
+    transform: scale(1.05);
+
+}
+
+
+.products2 p:hover,
+.acessories p:hover,
+.acessories1 p:hover,
+.regions .url:hover {
+    text-decoration: underline;
+
+}
+
+.products2:hover,
+.acessories1,
+.rec-items:hover:hover,
+.acessories:hover {
+    background-color: #DEE2E7;
+    transform: scale(1.05);
+
+}
+
+.regions:hover {
+    background-color: #DEE2E7;
+    transform: scale(1.05);
+    border-radius: 6px;
+}
+
+.ellipse:hover {
+    transform: scale(1.1);
+}
+
+/* List view page Animations */
+
