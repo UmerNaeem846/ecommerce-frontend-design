@@ -1,5 +1,6 @@
 .left ul li:hover {
     background-color: #E5F1FF;
+    border-radius: 7px;
     transform: scale(1.01);
 }
 

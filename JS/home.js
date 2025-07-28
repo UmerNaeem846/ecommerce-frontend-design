@@ -1,6 +1,6 @@
 let flags = []
 async function getflags() {
-    let f = await fetch("http://192.168.100.80:3000/Images/flags/")
+    let f = await fetch("http://127.0.0.1:3000/Images/flags/")
     let response = await f.text()
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -44,6 +44,106 @@ async function getflags() {
     )
 
 }
+let pro = []
+let disc = [40, 25, 15, 25, 25]
+async function getproducts() {
+    let p = await fetch("http://127.0.0.1:3000/Images/Products/")
+    let response = await p.text()
+    let div = document.createElement("div")
+    div.innerHTML = response;
+    let as = div.getElementsByTagName("a");
+    for (let index = 0; index < as.length; index++) {
+        const element = as[index];
+        if (element.href.endsWith(".png")) {
+            let parts = element.href.split(`/Products/`);
+            let product = parts[1].replace('%20', ' ')
+            pro.push(product)
+        }
+    }
+    const items = document.getElementById('products')
+    let i = 0;
+    for (const element of pro) {
+        items.innerHTML = items.innerHTML + ` <div class="products2" data-products="/Images/Products/${element}">
+                    <img src="/Images/Products/${element}" alt="">
+                    <p>${element.replace(".png", "")}</p>
+                    <div class="discount">-${disc[i]}%</div>
+                </div> `
+        i = i + 1;
+    }
+
+
+
+}
+
+let ho = []
+let usd = [39, 10, 19, 100, 19, 19, 19, 19]
+async function gethomeandoutddor() {
+    let home_out = await fetch("http://127.0.0.1:3000/Images/interior/")
+    let response = await home_out.text()
+    let div = document.createElement("div")
+    div.innerHTML = response;
+    let as = div.getElementsByTagName("a");
+    for (let index = 0; index < as.length; index++) {
+        const element = as[index];
+        if (element.href.endsWith(".png")) {
+            let parts = element.href.split(`/interior/`);
+            let home_outdoor = parts[1].replaceAll('%20', ' ')
+            ho.push(home_outdoor)
+        }
+    }
+    let i = 0;
+    const items = document.getElementById('grid1')
+    for (const element of ho) {
+        items.innerHTML = items.innerHTML + ` <div class="acessories" data-products="/Images/interior/${element}">
+                    <p>${element.replace(".png", "")}</p>
+                    <p class="usd">From <br> USD ${usd[i]}  </p>
+                    <img width="82" src="/Images/interior/${element}" alt="">
+
+                </div> `
+        i = i + 1;
+    }
+
+
+}
+
+let comp = []
+let usd1 = [89, 35, 10, 90, 340, 19, 240, 19]
+async function getelectronics() {
+    let electronics = await fetch("http://127.0.0.1:3000/Images/tech2/")
+    let response = await electronics.text()
+    let div = document.createElement("div")
+    div.innerHTML = response;
+    let as = div.getElementsByTagName("a");
+    for (let index = 0; index < as.length; index++) {
+        const element = as[index];
+        if (element.href.endsWith(".png")) {
+            let parts = element.href.split(`/tech2/`);
+            let ele = parts[1].replaceAll('%20', ' ')
+            comp.push(ele)
+        }
+    }
+    let i = 0;
+    const items = document.getElementById('grid2')
+    for (const element of comp) {
+        items.innerHTML = items.innerHTML + ` <div class="acessories1" data-products="/Images/tech2/${element}">
+                    <p>${element.replace(".png", "")}</p>
+                    <p class="usd1">From <br> USD ${usd1[i]}  </p>
+                    <img src="/Images/tech2/${element}" alt="">
+
+                </div> `
+        i = i + 1;
+        if (i == 3) {
+            const items1 = document.getElementById('grid2')
+
+        }
+    }
+
+
+}
+
+getelectronics()
+gethomeandoutddor()
+getproducts()
 getflags()
 
 const liElements = document.querySelectorAll('.left ul li');

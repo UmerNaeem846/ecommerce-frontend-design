@@ -9,6 +9,9 @@ main {
     justify-content: space-between;
     margin-top: 20px;
     padding: 20px;
+    border: 1px solid #DEE2E7;
+    border-radius: 7px;
+    height: 400px;
 }
 
 .left ul {
@@ -19,7 +22,7 @@ main {
 }
 
 .left ul li {
-    padding-left: 20px;
+    padding-left: 10px;
     width: 250px;
     cursor: pointer;
     transition: all 0.1s ease, color 0.1s ease;
@@ -29,11 +32,15 @@ main {
 .show1 {
     background-color: #E5F1FF;
     transform: scale(1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
 }
 
 .center {
     position: relative;
+}
+
+.center img {
+    object-fit: contain;
 }
 
 .para {
@@ -42,10 +49,7 @@ main {
     padding-top: 50px;
 }
 
-.center img {
-    max-height: 360px;
-    max-width: 700px;
-}
+
 
 .trendings {
     font-size: 28px;
@@ -63,8 +67,12 @@ main {
     margin-top: 20px;
     background-color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #38383814;
+    font-size: 16px;
+    font-weight: 500;
+
 }
 
 .right .box1 {
@@ -133,4 +141,380 @@ main {
     cursor: pointer;
     transition: all 0.1s ease;
 
+}
+
+.container2 {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: 1px solid #DEE2E7;
+    border-radius: 7px;
+    height: 240px;
+    display: flex;
+    justify-content: start;
+    gap: 244px;
+}
+
+.countdown {
+    padding: 20px;
+    height: 240px;
+
+}
+
+.deals-equ h3 {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.deals-equ p {
+    font-size: 16px;
+    color: #8B96A5;
+}
+
+.time {
+    display: flex;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    text-align: center;
+    width: 45px;
+    height: 50px;
+    background-color: #606060;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.days h3,
+.hours h3,
+.minutes h3,
+.seconds h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.days p,
+.hours p,
+.minutes p,
+.seconds p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#products {
+    display: flex;
+    gap: 24px;
+    /* allows wrapping to next line if needed */
+    justify-content: space-between;
+    /* or use 'space-between' for equal gaps */
+    align-items: stretch;
+}
+
+.products2 {
+    width: 200px;
+    max-height: 240px;
+    text-align: center;
+    border-left: 1px solid #DEE2E7;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.products2 img {
+    /* make images responsive within the box */
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+}
+
+.discount {
+    width: 59px;
+    background-color: #FFE3E3;
+    color: #EB001B;
+    width: 59;
+    height: 28;
+    top: 190px;
+    left: 57px;
+    opacity: 1;
+    border-radius: 29px;
+    padding: 4px 13px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container3 {
+    background-color: white;
+    margin-top: 20px;
+    border: 1px solid #DEE2E7;
+    border-radius: 7px;
+    height: 259px;
+    display: flex;
+}
+
+.home-outdoor {
+    position: relative;
+}
+
+.para2 {
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.para2 .outdoor {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.para2 .l-but2 {
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #38383814;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#grid1 {
+    display: grid;
+    grid-template-rows: 129px 129px;
+    grid-template-columns: 331px 331px 331px 331px;
+}
+
+.acessories {
+    padding: 20px;
+    position: relative;
+    border-left: 1px solid #DEE2E7;
+    border-bottom: 1px solid #DEE2E7;
+}
+
+.acessories p {
+    font-size: 16px;
+
+}
+
+.acessories .usd {
+    position: absolute;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #8B96A5;
+}
+
+.acessories img {
+    margin-left: 220px;
+
+
+}
+
+.container4 {
+    background-color: white;
+    margin-top: 20px;
+    border: 1px solid #DEE2E7;
+    border-radius: 7px;
+    height: 259px;
+    display: flex;
+}
+
+.consumer-electronics {
+    position: relative;
+}
+
+.para3 {
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.para3 .consumer {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.para3 .l-but3 {
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #38383814;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#grid2 {
+    display: grid;
+    grid-template-rows: 129px 129px;
+    grid-template-columns: 331px 331px 331px 331px;
+}
+
+.acessories1 {
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid #DEE2E7;
+    border-left: 1px solid #DEE2E7;
+
+}
+
+.acessories1 p {
+    font-size: 16px;
+
+}
+
+.acessories1 .usd1 {
+    position: absolute;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #8B96A5;
+}
+
+.acessories1 img {
+    margin-left: 220px;
+
+}
+
+.container5 {
+    background-color: white;
+    margin-top: 20px;
+    border: 1px solid #DEE2E7;
+    border-radius: 7px;
+    height: 420px;
+    position: relative;
+}
+
+.container5 .para4 {
+    position: absolute;
+    padding: 50px;
+    color: white;
+
+}
+
+.container5 .request {
+    font-size: 32px;
+    font-weight: 600;
+
+}
+
+.container5 p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.container5 img {
+    width: 1605px;
+}
+
+.container5 .inquiry {
+    position: absolute;
+    background-color: white;
+    width: 491px;
+    height: 346px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px 0px #38383840;
+    right: 35px;
+    top: 35px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.suppliers {
+    color: #1C1C1C;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#need-item {
+    border: 1px solid #DEE2E7;
+    width: 440px;
+    height: 40px;
+    opacity: 1;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+#need-item::placeholder {
+    color: black;
+    font-size: 16px;
+}
+
+#details {
+    width: 440px;
+    height: 73px;
+    border: 1px solid #DEE2E7;
+    border-radius: 6px;
+    outline: none;
+    padding: 10px;
+    margin-top: 20px;
+    resize: none;
+}
+
+#details::placeholder {
+    color: #8B96A5;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.2;
+}
+
+#quantity {
+    border: 1px solid #DEE2E7;
+    width: 206px;
+    height: 40px;
+    opacity: 1;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+#quantity::placeholder {
+    color: black;
+    font-size: 16px;
+}
+
+#pcs {
+    color: #1C1C1C;
+    border-left: none;
+    border: 1px solid #DEE2E7;
+    border-radius: 6px;
+    height: 40px;
+    width: 110px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 10px;
+    appearance: none;
+    cursor: pointer;
+    margin-left: 5px;
+    background: url('data:image/svg+xml;utf8,<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.59 0.295044L6 4.87504L1.41 0.295044L0 1.70504L6 7.70504L12 1.70504L10.59 0.295044Z" fill="%238B96A5"/></svg>') no-repeat right 10px center;
+}
+
+.send {
+    height: 40px;
+    margin-top: 20px;
+
+    width: 130px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #127FFF 0%, #0067FF 100%);
+    cursor: pointer;
 }
