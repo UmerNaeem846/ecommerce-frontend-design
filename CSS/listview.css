@@ -1,0 +1,226 @@
+.custom-radiobox {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.custom-radiobox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #F7FAFC;
+    border: 2px solid #BDBDBD;
+    border-radius: 50%;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Inner dot */
+.radiomark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 2.5px;
+    left: 2.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: blue;
+}
+
+/* When checked */
+.custom-radiobox input:checked~.radiomark {
+    background-color: white;
+    border-color: #007BFF;
+}
+
+.custom-radiobox input:checked~.radiomark::after {
+    display: block;
+}
+
+.custom-checkbox {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #F7FAFC;
+    border: 2px solid #BDBDBD;
+    border-radius: 4px;
+    padding-right: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Tick styling */
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Show tick and blue background when checked */
+.custom-checkbox input:checked~.checkmark {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+.custom-checkbox input:checked~.checkmark::after {
+    display: block;
+}
+
+
+
+.third-nav {
+    padding: 20px 150px;
+
+}
+
+.nav3 {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    color: #8B96A5;
+    align-items: center;
+}
+
+.nav3 li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+main {
+    height: 3000px;
+    padding: 0px 150px;
+}
+
+.left1 {
+    width: 240px;
+}
+
+.container1 {
+    border-top: 1px solid #DEE2E7;
+    padding-top: 14px;
+
+}
+
+.category {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.heading-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-img img {
+    rotate: 270deg;
+}
+
+.ele {
+    padding-top: 15px;
+}
+
+.e {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 34px;
+    color: #505050;
+
+}
+
+
+.see {
+    color: #0D6EFD;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+.container2 {
+    margin-top: 20px;
+    border-top: 1px solid #DEE2E7;
+    padding-top: 14px;
+
+}
+
+.mobilephones {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+
+
+
+.container3 {
+    margin-top: 20px;
+    border-top: 1px solid #DEE2E7;
+    padding-top: 14px;
+
+}
+
+.container4 {
+    margin-top: 20px;
+    border-top: 1px solid #DEE2E7;
+    padding-top: 14px;
+
+}
+
+
+.container5 {
+    margin-top: 20px;
+    border-top: 1px solid #DEE2E7;
+    padding-top: 14px;
+
+}
+
+
+
+.container6 {
+    margin-top: 20px;
+    border-top: 1px solid #DEE2E7;
+    padding-top: 14px;
+
+}
