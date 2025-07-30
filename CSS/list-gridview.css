@@ -691,3 +691,23 @@ input[type="range"]::-webkit-slider-thumb {
     color: #8B96A5;
     font-weight: 500;
 }
+
+.Categories23{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.category1{
+    display: flex;
+    margin-top: 20px;
+    width: auto;
+    gap: 10px;
+    align-items: center;
+    border-radius: 6px;
+    border:1px solid #0D6EFD;
+    color: #505050;
+    padding: 6.5px 10px;
+}
+.category1 img{
+    cursor: pointer;
+}

@@ -125,13 +125,13 @@ function attachHeartListeners() {
     hearts.forEach(heart => {
         const heartImg = heart.querySelector("img");
         let liked = false;
-        let width=false
+        let width = false
 
         heart.addEventListener("click", () => {
             liked = !liked;
-            width=!width;
+            width = !width;
             heartImg.src = liked ? "/Images/Icon/Heart-red.png" : "/Images/Icon/favorite_border.png";
-            heartImg.width=width ?"30" :"24"
+            heartImg.width = width ? "30" : "24"
         });
     });
 }
@@ -445,9 +445,120 @@ function movepagenumbers() {
     updateActivePage();
 }
 
+function displayCategories() {
+    const getradiobox = document.querySelectorAll(".custom-radiobox");
+    const getcheckbox = document.querySelectorAll(".custom-checkbox");
+    const getcategories = document.querySelector(".Categories23"); // Make sure this selector matches your HTML
+
+    getcheckbox.forEach(checkbox => {
+        const input = checkbox.querySelector("input");
+        const label = checkbox.querySelector("p");
+
+        checkbox.addEventListener("click", (e) => {
+            if (e.target.tagName.toLowerCase() === "input") return;
+
+            if (input.checked) {
+                checkbox.classList.remove("active");
+
+                const allTags = getcategories.querySelectorAll(".category1");
+                allTags.forEach(tag => {
+                    if (tag.querySelector("p").innerText === label.innerText) {
+                        tag.remove();
+                    }
+                });
+
+            } else {
+                checkbox.classList.add("active");
+
+                const exists = Array.from(getcategories.children).some(tag => tag.querySelector("p").innerText === label.innerText);
+                if (!exists) {
+                    const categoryTag = document.createElement("div");
+                    categoryTag.classList.add("category1");
+                    categoryTag.innerHTML = `
+                    <p>${label.innerText}</p>
+                    <img src="/Images/Icon/clear.png" alt="">`;
+                    categoryTag.querySelector("img").addEventListener("click", () => {
+                        categoryTag.remove();
+                        input.checked = false;
+                        checkbox.classList.remove("active");
+                    });
+                    getcategories.appendChild(categoryTag);
+                }
+            }
+        });
+    });
+    getcheckbox.forEach(checkbox => {
+        const input = checkbox.querySelector("input");
+        const label = checkbox.querySelector("img");
+
+        checkbox.addEventListener("click", (e) => {
+            if (e.target.tagName.toLowerCase() === "input") return;
+
+            if (input.checked) {
+                checkbox.classList.remove("active");
+
+                const allTags = getcategories.querySelectorAll(".category1");
+                allTags.forEach(tag => {
+                    if (tag.querySelector("p").innerText === label.alt) {
+                        tag.remove();
+                    }
+                });
+
+            } else {
+                checkbox.classList.add("active");
+
+                const exists = Array.from(getcategories.children).some(tag => tag.querySelector("p").innerText === label.alt);
+                if (!exists) {
+                    const categoryTag = document.createElement("div");
+                    categoryTag.classList.add("category1");
+                    categoryTag.innerHTML = `
+                    <p>${label.alt}</p>
+                    <img src="/Images/Icon/clear.png" alt="">
+                `;
+
+                    categoryTag.querySelector("img").addEventListener("click", () => {
+                        categoryTag.remove();
+                        input.checked = false;
+                        checkbox.classList.remove("active");
+                    });
+                    getcategories.appendChild(categoryTag);
+                }
+
+            }
+        });
+    });
+
+    getradiobox.forEach(radiobox => {
+        const input = radiobox.querySelector("input");
+        const label = radiobox.querySelector("p");
+
+        radiobox.addEventListener("click", (e) => {
+            if (e.target.tagName.toLowerCase() === "input") return;
+
+            if (input.checked) {
+                radiobox.classList.remove("active");
 
 
+            } else {
+                radiobox.classList.add("active");
+                getcategories.innerHTML = `
+                <div class="category1">
+                    <p>${label.innerHTML}</p>
+                    <img src="/Images/Icon/clear.png" alt="">
+                </div>`;
+                const getca = document.querySelector(".category1")
+                getca.querySelector("img").addEventListener("click", () => {
+                    getca.remove();
+                    input.checked = false;
+                    checkbox.classList.remove("active");
+                });
+            }
+        });
+    });
 
+}
+
+displayCategories()
 displaylist_grid()
 movepagenumbers()
 getlistofproducts()
