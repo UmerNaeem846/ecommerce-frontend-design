@@ -93,4 +93,40 @@
 }
 
 /* List view page Animations */
+.nav3 li:hover {
+    text-decoration: underline;
+    transform: scale(1.03);
+}
 
+.ele .e li:hover {
+    background-color: #E5F1FF;
+    border-radius: 7px;
+    transform: scale(1.01);
+}
+
+.see:hover {
+    text-decoration: underline;
+}
+
+.description p:hover,
+.description h6:hover,
+.description h5:hover {
+    text-decoration: underline;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.grid-mode .description h5:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.heart:hover {
+    transform: scale(1.03);
+
+}
+
+.product1:hover {
+    transform: scale(1.01);
+
+}
