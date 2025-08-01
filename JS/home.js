@@ -58,36 +58,54 @@ async function getflags() {
     }
     )
 }
-let pro = []
-let disc = [40, 25, 15, 25, 25]
+let pro = [];
+let disc = [40, 25, 15, 25, 25];
+
 async function getproducts() {
-    let p = await fetch("http://127.0.0.1:3000/Images/Products/")
-    let response = await p.text()
-    let div = document.createElement("div")
+    let p = await fetch("http://127.0.0.1:3000/Images/Products/");
+    let response = await p.text();
+    let div = document.createElement("div");
     div.innerHTML = response;
+
     let as = div.getElementsByTagName("a");
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
         if (element.href.endsWith(".png")) {
             let parts = element.href.split(`/Products/`);
-            let product = parts[1].replace('%20', ' ')
-            pro.push(product)
+            let product = parts[1].replace('%20', ' ');
+            pro.push(product);
         }
     }
-    const items = document.getElementById('products')
+
+    const items = document.getElementById('products');
     let i = 0;
+
     for (const element of pro) {
-        items.innerHTML = items.innerHTML + ` <div class="products2" data-products="/Images/Products/${element}">
-                    <img src="/Images/Products/${element}" alt="">
-                    <p>${element.replace(".png", "")}</p>
-                    <div class="discount">-${disc[i]}%</div>
-                </div> `
-        i = i + 1;
+        let productName = element.replace(".png", "");
+
+        let productHTML = `
+        <div class="products2" data-products="/Images/Products/${element}">
+            <img src="/Images/Products/${element}" alt="">
+            <p>${productName}</p>
+            <div class="discount">-${disc[i]}%</div>
+        </div>
+    `;
+
+        // If it's the 3rd product, wrap in <a>
+        if (i === 3) {
+            productHTML = `
+            <a href="list-gridview.html" style="text-decoration: none; color: black;">
+                ${productHTML}
+            </a>
+        `;
+        }
+
+        items.innerHTML += productHTML;
+        i++;
     }
 
-
-
 }
+
 
 let ho = []
 let usd = [39, 10, 19, 100, 19, 19, 19, 19]
@@ -154,7 +172,7 @@ async function getelectronics() {
 
 let reco = []
 let usd2 = [10.29, 10.29, 12.49, 33.99, 98.99, 9.99, 8.99, 10.29, 10.29, 80.95]
-let desc = ["T-shirts with multiple colors for men","Leather Jacket", "Brown winter coat medium size", "Leather Wallet",
+let desc = ["T-shirts with multiple colors for men", "Leather Jacket", "Brown winter coat medium size", "Leather Wallet",
     "Jeans bag for travel for men",
     "Jeans shorts for men blue color",
     "Headset for gaming with mic",
@@ -184,7 +202,7 @@ async function getrecommended() {
                     <p class="usd2">$${usd2[i]}  </p>
                     <p class="quality">${desc[i]}</p>
                 </div> `
-                i=i+1;
+        i = i + 1;
 
     }
 

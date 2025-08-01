@@ -62,64 +62,76 @@ function renderProducts() {
     const listofproducts = document.querySelector(".listofproducts");
     listofproducts.innerHTML = "";
     let isList = listofproducts.classList.contains("list-mode");
-    let i = 0
+    let i = 0;
+
     for (const element of liofp) {
+        let productHTML = "";
+
         if (isList) {
-            listofproducts.innerHTML += `
-            <div class="product1">
-                <div class="productimg">
-                    <img width="210" height="210" src="/Images/MobilePhones/${element}" alt="">
-                </div>
-                <div class="description">
-                    <p>${title[i]}</p>
-                    <h2>$${price[i]}</h2>
-                    <div class="ratting-order">
-                        <img height="15" width="80" src="/Images/Misc/rating-1.png" alt="">
-                        <ul class="order">
-                            <li class="o">${orders[i]} orders</li>
-                            <li class="shi">Free Shipping</li>
-                        </ul>
+            productHTML = `
+                <div class="product1">
+                    <div class="productimg">
+                        <img width="210" height="210" src="/Images/MobilePhones/${element}" alt="">
                     </div>
-                    <h5>${desc[i]}</h5>
-                    <h6>View Details</h6>
-                </div>
-                <div class="heart">
-                    <img src="/Images/Icon/favorite_border.png" alt="">
-                </div>
-            </div>`;
-            i = i + 1;
-        } else {
-            listofproducts.innerHTML += `
-            <div class="product1">
-                <div class="productimg">
-                    <img width="250" height="250" src="/Images/MobilePhones/${element}" alt="">
-                </div>
-                <div class="description">
+                    <div class="description">
+                        <p>${title[i]}</p>
+                        <h2>$${price[i]}</h2>
+                        <div class="ratting-order">
+                            <img height="15" width="80" src="/Images/Misc/rating-1.png" alt="">
+                            <ul class="order">
+                                <li class="o">${orders[i]} orders</li>
+                                <li class="shi">Free Shipping</li>
+                            </ul>
+                        </div>
+                        <h5>${desc[i]}</h5>
+                        <h6>View Details</h6>
+                    </div>
                     <div class="heart">
                         <img src="/Images/Icon/favorite_border.png" alt="">
                     </div>
-                    <div class="price">
-                        <h2>$${price[i]}</h2>
-                        <h3>$1200.99</h3>
+                </div>`;
+        } else {
+            productHTML = `
+                <div class="product1">
+                    <div class="productimg">
+                        <img width="250" height="250" src="/Images/MobilePhones/${element}" alt="">
                     </div>
-                    <div class="ratting-order">
-                        <img height="15" width="80" src="/Images/Misc/rating-1.png" alt="">
-                        <ul class="order">
-                            <li class="o">${orders[i]} orders</li>
-                            <li class="shi">Free Shipping</li>
-                        </ul>
+                    <div class="description">
+                        <div class="heart">
+                            <img src="/Images/Icon/favorite_border.png" alt="">
+                        </div>
+                        <div class="price">
+                            <h2>$${price[i]}</h2>
+                            <h3>$1200.99</h3>
+                        </div>
+                        <div class="ratting-order">
+                            <img height="15" width="80" src="/Images/Misc/rating-1.png" alt="">
+                            <ul class="order">
+                                <li class="o">${orders[i]} orders</li>
+                                <li class="shi">Free Shipping</li>
+                            </ul>
+                        </div>
+                        <h5>${title[i]}</h5>
+                        <h6>View Details</h6>
                     </div>
-                    <h5>${title[i]}</h5>
-                    <h6>View Details</h6>
-                </div>
-            </div>`;
-            i = i + 1;
-
+                </div>`;
         }
-    }
-    attachHeartListeners();
 
+        if (i === 0) {
+            listofproducts.innerHTML += `
+                <a href="product-detail.html" style="text-decoration: none; color: inherit;">
+                    ${productHTML}
+                </a>`;
+        } else {
+            listofproducts.innerHTML += productHTML;
+        }
+
+        i++;
+    }
+
+    attachHeartListeners();
 }
+
 function attachHeartListeners() {
     const hearts = document.querySelectorAll(".heart");
     hearts.forEach(heart => {
@@ -164,18 +176,7 @@ async function getlistofproducts() {
 
 
 function getanimations() {
-    const liElements = document.querySelectorAll('.left ul li');
 
-    liElements.forEach(li => {
-        li.addEventListener("click", () => {
-            // Remove 'show1' class from all li elements
-            liElements.forEach(el => el.classList.remove('show1'));
-
-            // Add 'show1' class to the clicked li
-            li.classList.add('show1');
-        });
-
-    });
 
     const searchButton = document.querySelector(".search-button");
 
@@ -564,6 +565,3 @@ movepagenumbers()
 getlistofproducts()
 displayside()
 getranges()
-getflags()
-getanimations()
-

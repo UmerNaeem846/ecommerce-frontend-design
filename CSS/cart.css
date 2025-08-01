@@ -1,0 +1,51 @@
+main {
+    height: 1800px;
+    padding: 0px 150px;
+}
+
+
+
+
+.container5 {
+    width: 1580px;
+    height: 120px;
+    background-color: #005ADE;
+    border-radius: 6px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount {
+    border-radius: 6px;
+    width: 1000px;
+    height: 120px;
+    background-color: #237CFF;
+    background: linear-gradient(60deg, #237CFF 90%, #005ADE 50%);
+    padding: 30px;
+    color: white;
+
+}
+
+.discount p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.discount h4 {
+    font-weight: 300;
+    font-size: 16px;
+}
+.shopnow{
+    padding: 40px;
+}
+.shopnow button{
+    background-color: #FF9017;
+    border: none;
+    border-radius: 6px;
+    padding: 11px 17px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}

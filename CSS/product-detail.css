@@ -1,0 +1,646 @@
+.third-nav {
+    padding: 20px 150px;
+
+}
+
+
+
+.nav3 {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    color: #8B96A5;
+    align-items: center;
+
+}
+
+.nav3 li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+
+}
+
+main {
+    height: 1800px;
+    padding: 0px 150px;
+}
+
+.container1 {
+    width: 1580px;
+    height: 580px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #DEE2E7;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageofproduct {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.productbox {
+    border-radius: 6px;
+    border: 1px solid #DEE2E7;
+    padding: 10px;
+    width: 380px;
+}
+
+.productbox {
+    transition: all 0.2s ease;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.box1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    border: 1px solid #DEE2E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.instock {
+    display: flex;
+    color: #00B517;
+    gap: 2px;
+
+}
+
+.detailsofproduct h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.ratting-order {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ratting-order .order {
+    display: flex;
+    list-style-position: inside;
+    gap: 10px;
+    list-style: none;
+}
+
+.sold {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #787A80;
+}
+
+.reviews {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #787A80;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.order li::before {
+    content: "•";
+    color: #DBDBDB;
+    display: inline-block;
+    width: 1em;
+    font-size: 16px;
+}
+
+.ratting {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ratting p {
+    color: #FF9017;
+}
+
+.ranges {
+    margin-top: 15px;
+    width: 500px;
+    height: 80px;
+    background-color: #FFF0DF;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    gap: 10px;
+}
+
+.dollar1,
+.dollar2 {
+    width: 120px;
+    border-right: 1px solid #BDC1C8;
+}
+
+.dollar1 h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FA3434;
+}
+
+.dollar2 h4,
+.dollar3 h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dollar1 p,
+.dollar2 p,
+.dollar3 p {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #606060;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    gap: 100px;
+    border-bottom: 1px solid #E0E0E0;
+    width: 500px;
+}
+
+.price h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8B96A5;
+}
+
+.price h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #505050;
+}
+
+.type {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E0E0E0;
+    width: 500px;
+}
+
+.type ul {
+    display: flex;
+    list-style: none;
+}
+
+.type ul li {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8B96A5;
+}
+
+.type ul li h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #505050;
+}
+
+.li1 {
+    gap: 100px;
+}
+
+.li2 {
+    gap: 77px;
+}
+
+.li3 {
+    gap: 85px;
+}
+
+.warranty {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E0E0E0;
+    width: 500px;
+}
+
+.warranty ul {
+    display: flex;
+    list-style: none;
+}
+
+.warranty ul li {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8B96A5;
+}
+
+.warranty ul li h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #505050;
+}
+
+.li4 {
+    gap: 30px;
+}
+
+.li5 {
+    gap: 62px;
+}
+
+.li6 {
+    gap: 70px;
+}
+
+.supplier-details {
+    width: 280px;
+    box-shadow: 0px 1px 2px 0px #38383814;
+    border: 1px solid #DEE2E7;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.info p {
+    padding-top: 5px;
+}
+
+.details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details ul {
+    display: flex;
+    list-style: none;
+}
+
+.details ul li {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8B96A5;
+}
+
+.li7 {
+    gap: 20px;
+}
+
+.li8 {
+    gap: 20px;
+}
+
+.li9 {
+    gap: 20px;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.buttons button {
+    width: 240px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.send-inquiry {
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #127FFF 0%, #0067FF 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.sellers {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    border: 1px solid #DEE2E7;
+    border-radius: 6px;
+    color: #0D6EFD;
+}
+
+.heart {
+    padding-left: 70px;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.heart p {
+    color: #0D6EFD;
+    font-weight: 500;
+}
+
+.container2 {
+    width: 1180px;
+    height: 580px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #DEE2E7;
+    box-shadow: 0px 1px 3px 0px #3838381A;
+
+}
+
+.full-details {
+    position: relative;
+    padding: 15px 25px;
+    border-bottom: 1px solid #DEE2E7;
+}
+
+.full-details ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.full-details ul li {
+    color: #8B96A5;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.full-details ul li.active {
+    color: #0D6EFD;
+}
+
+.full-details ul li::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #0D6EFD;
+    transition: width 0.3s ease;
+}
+
+.full-details ul li.active::after {
+    width: 100%;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px 0;
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.paragraph {
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-right: 100px;
+    color: #505050;
+    line-height: 27px;
+}
+
+.specs-features {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.specifications {
+    height: 210px;
+    margin-top: 25px;
+    width: 500px;
+    margin-left: 25px;
+    border: 1px solid #E0E7E9;
+}
+
+.spec {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 2px solid #E0E7E9;
+    color: #505050;
+}
+
+.grey {
+    background-color: #EFF2F4;
+    padding: 10px;
+    width: 210px;
+    border-right: 1px solid #E0E7E9;
+}
+
+.features {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.feature {
+    color: #505050;
+    display: flex;
+    gap: 10px;
+}
+
+.container23 {
+    display: flex;
+    gap: 10px;
+}
+
+.container3 {
+    width: 390px;
+    height: 580px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #DEE2E7;
+}
+
+.like {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.shirtboxes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.shirt {
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.imgofshirt {
+    border: 1px solid #E0E0E0;
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsofshirt h6 {
+    color: #8B96A5;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+
+}
+
+.container4 {
+    width: 1580px;
+    height: 380px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #DEE2E7;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.container4 h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.books {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book {
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.imgofbook {
+    margin-top: 20px;
+    background-color: #EEEEEE;
+    width: 172px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.detailsofbook {
+    margin-top: 10px;
+    padding-left: 3px;
+    width: 150px;
+}
+
+.detailsofbook p {
+    color: #505050;
+    font-size: 16px;
+}
+
+.detailsofbook h6 {
+    color: #8B96A5;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.container5 {
+    width: 1580px;
+    height: 120px;
+    background-color: #005ADE;
+    border-radius: 6px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount {
+    border-radius: 6px;
+    width: 1000px;
+    height: 120px;
+    background-color: #237CFF;
+    background: linear-gradient(60deg, #237CFF 90%, #005ADE 50%);
+    padding: 30px;
+    color: white;
+
+}
+
+.discount p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.discount h4 {
+    font-weight: 300;
+    font-size: 16px;
+}
+.shopnow{
+    padding: 40px;
+}
+.shopnow button{
+    background-color: #FF9017;
+    border: none;
+    border-radius: 6px;
+    padding: 11px 17px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}

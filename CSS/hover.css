@@ -74,12 +74,19 @@
 }
 
 .products2:hover,
-.acessories1,
-.rec-items:hover:hover,
+.acessories1:hover,
 .acessories:hover {
     background-color: #DEE2E7;
     transform: scale(1.05);
 
+}
+
+.rec-items:hover {
+    transform: scale(1.05);
+    
+}
+.rec-items p:hover{
+    text-decoration: underline;
 }
 
 .regions:hover {
@@ -129,4 +136,20 @@
 .product1:hover {
     transform: scale(1.01);
 
+}
+
+/* Product Details */
+.reviews:hover {
+    transform: scale(1.03);
+}
+
+.detailsofshirt p:hover,
+.detailsofbook p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.shirt:hover,
+.book:hover {
+    transform: scale(1.03);
 }
