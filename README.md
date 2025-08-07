@@ -1,5 +1,4 @@
 # E-commerce Frontend Design
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/UmerNaeem846/ecommerce-frontend-design)
 
 This repository contains the complete frontend design for a modern e-commerce website. It is built using pure HTML, CSS, and vanilla JavaScript, showcasing a clean, responsive, and interactive user interface. The project includes pages for home, product listing (with grid/list views), product details, and a shopping cart.
 
